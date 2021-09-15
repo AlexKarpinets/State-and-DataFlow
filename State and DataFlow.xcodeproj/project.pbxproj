@@ -15,6 +15,7 @@
 		FAB64AF126F12DA600055126 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB64AF026F12DA600055126 /* RegisterView.swift */; };
 		FAB64AF326F12E6000055126 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB64AF226F12E6000055126 /* UserManager.swift */; };
 		FAB64AF526F1300400055126 /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB64AF426F1300400055126 /* StarterView.swift */; };
+		FAF5E73126F268B5000FCDB1 /* CharCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5E73026F268B5000FCDB1 /* CharCounter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FAB64AF026F12DA600055126 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		FAB64AF226F12E6000055126 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		FAB64AF426F1300400055126 /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
+		FAF5E73026F268B5000FCDB1 /* CharCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharCounter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				FAB64ADF26F121C100055126 /* State_and_DataFlowApp.swift */,
 				FAB64AE126F121C100055126 /* ContentView.swift */,
+				FAF5E73026F268B5000FCDB1 /* CharCounter.swift */,
 				FAB64AF026F12DA600055126 /* RegisterView.swift */,
 				FAB64AF426F1300400055126 /* StarterView.swift */,
 				FAB64AF226F12E6000055126 /* UserManager.swift */,
@@ -152,6 +155,7 @@
 			files = (
 				FAB64AEF26F1250800055126 /* TimeCounter.swift in Sources */,
 				FAB64AF126F12DA600055126 /* RegisterView.swift in Sources */,
+				FAF5E73126F268B5000FCDB1 /* CharCounter.swift in Sources */,
 				FAB64AF526F1300400055126 /* StarterView.swift in Sources */,
 				FAB64AE226F121C100055126 /* ContentView.swift in Sources */,
 				FAB64AF326F12E6000055126 /* UserManager.swift in Sources */,

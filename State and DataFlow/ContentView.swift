@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var user: UserManager
-  @StateObject private var timer = TimeCounter()
+    @StateObject private var timer = TimeCounter()
     
     var body: some View {
         VStack {
@@ -23,6 +24,17 @@ struct ContentView: View {
             
             ButtonView(timer: timer)
             Spacer()
+            Button(action: {presentationMode.wrappedValue.dismiss()}, label: {
+                Text("Dismiss")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+            })
+            .frame(width: 200, height: 60)
+            .background(Color.red)
+            .cornerRadius(20)
+            .overlay(RoundedRectangle(cornerRadius: 20)
+            .stroke(Color.black, lineWidth: 4))
         }
     }
 }
@@ -34,7 +46,7 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct ButtonView: View {
-   @ObservedObject var timer: TimeCounter
+    @ObservedObject var timer: TimeCounter
     
     var body: some View {
         Button(action: timer.startTimer) {
@@ -44,8 +56,9 @@ struct ButtonView: View {
                 .foregroundColor(.white)
         }
         .frame(width: 200, height: 60)
-        .background(Color.red)
+        .background(Color.green)
         .cornerRadius(20)
-        .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.black, lineWidth: 4))
+        .overlay(RoundedRectangle(cornerRadius: 20)
+        .stroke(Color.black, lineWidth: 4))
     }
 }

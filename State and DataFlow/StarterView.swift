@@ -15,7 +15,7 @@ struct StarterView: View {
             if user.isRegister {
                 ContentView()
             } else {
-                RegisterView()
+                RegisterView(color: .red)
             }
         }
     }
